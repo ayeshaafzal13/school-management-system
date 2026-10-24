@@ -6,12 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@clerk/elements": "^0.24.21",
+    "@clerk/nextjs": "^7.9.20",
+    "@hookform/resolvers": "^5.9.2",
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "moment": "^2.31.0",
     "next": "16.3.8",
+    "next-cloudinary": "^6.19.3",
+    "pg": "^8.23.1",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-big-calendar": "^1.20.0",
+    "react-calendar": "^6.0.1",
+    "react-dom": "19.2.8",
+    "react-hook-form": "^7.90.0",
+    "react-toastify": "^11.1.0",
+    "recharts": "^3.10.1",
+    "ts-node": "^10.9.2",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -20,7 +36,11 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "prisma": "^7.10.1",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }

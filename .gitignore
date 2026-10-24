@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local tooling and docker (not needed for deploy)
+.agents/
+.claude/
+.cursor/
+.devin/
+project-structure.txt
+docker-compose.yml
+Dockerfile
+.dockerignore
