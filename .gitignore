@@ -49,3 +49,6 @@ project-structure.txt
 docker-compose.yml
 Dockerfile
 .dockerignore
+
+ts-basics/node_modules
+ts-basics/dist
